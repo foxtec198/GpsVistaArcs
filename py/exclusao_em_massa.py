@@ -12,3 +12,4 @@ def excluir():
 while True:
     excluir()
     sl(5)
+    print('Apagado')
