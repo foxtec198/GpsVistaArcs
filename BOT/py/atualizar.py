@@ -1,4 +1,4 @@
 from bots import Atualizar
 
 while True:
-    Atualizar.atualizar_pagina()
+    Atualizar.atualizar_pagina([])
