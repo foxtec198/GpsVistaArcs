@@ -10,8 +10,8 @@ class Excluir():
 
 class Atualizar():
     def atualizar_pagina(self):
-        self.hora = strftime("%H")
-        if self.hora >= "08" or self.hora <= "18":
+        hora = strftime("%H")
+        if hora >= "08" or hora <= "18":
             pg.press('f5')
             sleep(600)
         else:
