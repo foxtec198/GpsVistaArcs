@@ -3,10 +3,10 @@ from time import sleep, strftime
 
 class Excluir():
     def exclussão_em_massa(self):
-        pg.click(1084, 358)
+        pg.click(1117, 334)
         pg.press('tab')
         pg.press('enter')
-        sleep(1.5)
+        sleep(5)
 
 class Atualizar():
     def atualizar_pagina(self):
