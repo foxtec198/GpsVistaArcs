@@ -5,4 +5,7 @@ class WhatsBot:
     def __init__(self):
         self.msg = ''
         self.ctt = ['43996617904']
-        op =  webdriver.Chrome
+        op =  webdriver.ChromeOptions()
+        op.add_argument('lang = pt-br')
+        self.driver = webdriver.Chrome(executable_path=r'driver.exe')
+        
