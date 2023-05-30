@@ -1,15 +1,16 @@
 import pyautogui as pg
 from time import sleep
+from selenium import webdriver as wb
 
 class WhatsBot:
     def __init__(self):
-        for i in range(100):
-            self.criar_grupo()
-            sleep(1)
+        pass
+    
+    def Automa_Whats(self):
+        nv = wb.Chrome()
     
     def criar_grupo(self):
-        # pg.click(122, 352)
         pg.write('- GPS')
         pg.press('Enter')
     
-WhatsBot()
+WhatsBot().Automa_Whats()
