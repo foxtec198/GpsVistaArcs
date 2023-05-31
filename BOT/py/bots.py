@@ -3,7 +3,7 @@ from time import sleep, strftime
 
 class Excluir():
     def exclussão_em_massa(self):
-        pg.click(1117, 334)
+        pg.click(1115, 334)
         pg.press('tab')
         pg.press('enter')
         sleep(5)
