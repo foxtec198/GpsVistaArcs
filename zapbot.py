@@ -1,16 +1,29 @@
 import pyautogui as pg
 from time import sleep
-from selenium import webdriver as wb
 
 class WhatsBot:
     def __init__(self):
-        pass
+        pg.PAUSE = 0.5
+        self.Automa_Whats()
+        # print(pg.position())
     
+    def atalho(self, *key):
+        with pg.hold(key[0]):
+            pg.press(key[1])
+            
     def Automa_Whats(self):
-        nv = wb.Chrome()
+        self.atalho('win', 'm')
+        pg.write('tecnobreve')
+        pg.press('enter')
+        self.atalho('win', 'up')
+        sleep(5)
+        pg.click(172, 109)
+        pg.write('Gui GPS')
+        pg.press('enter')
+        pg.write(self.msg)
+        pg.press('enter')
+        sleep(1)
+        self.atalho('ctrl', 'w')
     
-    def criar_grupo(self):
-        pg.write('- GPS')
-        pg.press('Enter')
-    
-WhatsBot().Automa_Whats()
+WhatsBot.msg = 'Ola tudo bem com você?'
+WhatsBot()
